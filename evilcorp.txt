@@ -1,0 +1,71 @@
+ push   %ebp
+   0x08048e2c <+1>:     mov    %esp,%ebp
+   0x08048e2e <+3>:     sub    $0x18,%esp
+   0x08048e31 <+6>:     mov    0x8(%ebp),%eax
+   0x08048e34 <+9>:     mov    %eax,(%esp)
+   0x08048e37 <+12>:    call   0x80486f0 <strlen@plt>
+   0x08048e3c <+17>:    cmp    $0x8,%eax
+   0x08048e3f <+20>:    je     0x8048e4d <phase_2+34>
+   0x08048e41 <+22>:    movl   $0x2,(%esp)
+   0x08048e48 <+29>:    call   0x8048b90 <alert_henchmen>
+   0x08048e4d <+34>:    mov    0x8(%ebp),%eax
+   0x08048e50 <+37>:    movzbl (%eax),%eax
+   0x08048e53 <+40>:    cmp    $0x73,%al
+   0x08048e55 <+42>:    je     0x8048e63 <phase_2+56>
+   0x08048e57 <+44>:    movl   $0x2,(%esp)
+   0x08048e5e <+51>:    call   0x8048b90 <alert_henchmen>
+   0x08048e63 <+56>:    mov    0x8(%ebp),%eax
+   0x08048e66 <+59>:    add    $0x1,%eax
+   0x08048e69 <+62>:    movzbl (%eax),%eax
+   0x08048e6c <+65>:    cmp    $0x61,%al
+   0x08048e6e <+67>:    je     0x8048e7c <phase_2+81>
+   0x08048e70 <+69>:    movl   $0x2,(%esp)
+   0x08048e77 <+76>:    call   0x8048b90 <alert_henchmen>
+   0x08048e7c <+81>:    mov    0x8(%ebp),%eax
+   0x08048e7f <+84>:    add    $0x2,%eax
+   0x08048e82 <+87>:    movzbl (%eax),%eax
+   0x08048e85 <+90>:    cmp    $0x6e,%al
+   0x08048e87 <+92>:    je     0x8048e95 <phase_2+106>
+   0x08048e89 <+94>:    movl   $0x2,(%esp)
+   0x08048e90 <+101>:   call   0x8048b90 <alert_henchmen>
+   0x08048e95 <+106>:   mov    0x8(%ebp),%eax
+   0x08048e98 <+109>:   add    $0x3,%eax
+   0x08048e9b <+112>:   movzbl (%eax),%eax
+   0x08048e9e <+115>:   cmp    $0x67,%al
+   0x08048ea0 <+117>:   je     0x8048eae <phase_2+131>
+   0x08048ea2 <+119>:   movl   $0x2,(%esp)
+   0x08048ea9 <+126>:   call   0x8048b90 <alert_henchmen>
+   0x08048eae <+131>:   mov    0x8(%ebp),%eax
+   0x08048eb1 <+134>:   add    $0x4,%eax
+   0x08048eb4 <+137>:   movzbl (%eax),%eax
+   0x08048eb7 <+140>:   cmp    $0x75,%al
+   0x08048eb9 <+142>:   je     0x8048ec7 <phase_2+156>
+   0x08048ebb <+144>:   movl   $0x2,(%esp)
+   0x08048ec2 <+151>:   call   0x8048b90 <alert_henchmen>
+   0x08048ec7 <+156>:   mov    0x8(%ebp),%eax
+   0x08048eca <+159>:   add    $0x5,%eax
+   0x08048ecd <+162>:   movzbl (%eax),%eax
+   0x08048ed0 <+165>:   cmp    $0x69,%al
+   0x08048ed2 <+167>:   je     0x8048ee0 <phase_2+181>
+   0x08048ed4 <+169>:   movl   $0x2,(%esp)
+   0x08048edb <+176>:   call   0x8048b90 <alert_henchmen>
+   0x08048ee0 <+181>:   mov    0x8(%ebp),%eax
+   0x08048ee3 <+184>:   add    $0x6,%eax
+   0x08048ee6 <+187>:   movzbl (%eax),%eax
+   0x08048ee9 <+190>:   cmp    $0x6e,%al
+   0x08048eeb <+192>:   je     0x8048ef9 <phase_2+206>
+   0x08048eed <+194>:   movl   $0x2,(%esp)
+   0x08048ef4 <+201>:   call   0x8048b90 <alert_henchmen>
+   0x08048ef9 <+206>:   mov    0x8(%ebp),%eax
+   0x08048efc <+209>:   add    $0x7,%eax
+   0x08048eff <+212>:   movzbl (%eax),%eax
+   0x08048f02 <+215>:   cmp    $0x65,%al
+   0x08048f04 <+217>:   je     0x8048f12 <phase_2+231>
+   0x08048f06 <+219>:   movl   $0x2,(%esp)
+   0x08048f0d <+226>:   call   0x8048b90 <alert_henchmen>
+   0x08048f12 <+231>:   mov    0x8(%ebp),%eax
+   0x08048f15 <+234>:   mov    %eax,0x4(%esp)
+   0x08048f19 <+238>:   movl   $0x2,(%esp)
+   0x08048f20 <+245>:   call   0x8048c0f <confirm_phase>
+   0x08048f25 <+250>:   leave
+   0x08048f26 <+251>:   ret
